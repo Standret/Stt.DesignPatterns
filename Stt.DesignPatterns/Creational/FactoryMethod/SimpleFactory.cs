@@ -7,9 +7,9 @@ namespace Stt.DesignPatterns.Creational.FactoryMethod
 {
     public static class SimpleFactory
     {
-        public static IValidator CreateEmailValidator()
+        public static IValidator CreatePasswordValidator()
         {
-            return new EmailValidator(); // and add init field like min, max pattern etc
+            return new PasswordValidator(); // and add init field like min, max pattern etc
         }
 
         public static IValidator CreateConfirmPasswordValidator(IValidator passwordValidator)

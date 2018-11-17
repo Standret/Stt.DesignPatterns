@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Stt.DesignPatterns.Creational.FactoryMethod;
+using System;
 
 namespace Stt.DesignPatterns
 {
@@ -6,7 +7,14 @@ namespace Stt.DesignPatterns
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IExampleRunable example = null;
+
+            example = new SimpleFactoryMethodsExample();
+            example = new FactoryMethodExample();
+
+            example.Run();
+
+            Console.ReadKey();
         }
     }
 }

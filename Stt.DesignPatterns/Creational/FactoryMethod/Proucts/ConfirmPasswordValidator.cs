@@ -15,6 +15,7 @@ namespace Stt.DesignPatterns.Creational.FactoryMethod.Proucts
 
         public override bool Validate()
         {
+            Console.WriteLine("-> ConfirmPasswordValidator");
             return base.Validate(); // added here compare two password
         }
     }
