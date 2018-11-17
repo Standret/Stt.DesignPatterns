@@ -1,4 +1,6 @@
-﻿using Stt.DesignPatterns.Creational.FactoryMethod;
+﻿using Stt.DesignPatterns.Creational.Builder;
+using Stt.DesignPatterns.Creational.FactoryMethod;
+using Stt.DesignPatterns.Creational.Prototype;
 using System;
 
 namespace Stt.DesignPatterns
@@ -11,6 +13,8 @@ namespace Stt.DesignPatterns
 
             example = new SimpleFactoryMethodsExample();
             example = new FactoryMethodExample();
+            example = new BuilderExample();
+            example = new PrototypeMemberwiseExample();
 
             example.Run();
 

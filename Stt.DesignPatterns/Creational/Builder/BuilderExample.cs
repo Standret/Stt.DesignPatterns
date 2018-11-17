@@ -6,7 +6,7 @@ namespace Stt.DesignPatterns.Creational.Builder
 {
     public class BuilderExample : BaseExampleRunable
     {
-        public BuilderExample(string key) : base("Builder") { }
+        public BuilderExample() : base("Builder") { }
 
         protected override void RunAction()
         {
