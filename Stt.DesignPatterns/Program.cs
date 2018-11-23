@@ -2,6 +2,7 @@
 using Stt.DesignPatterns.Creational.Builder;
 using Stt.DesignPatterns.Creational.FactoryMethod;
 using Stt.DesignPatterns.Creational.Prototype;
+using Stt.DesignPatterns.Structural.Bridge;
 using Stt.DesignPatterns.Structural.Composite;
 using Stt.DesignPatterns.Structural.Flyweight;
 using System;
@@ -23,9 +24,10 @@ namespace Stt.DesignPatterns
             // Structural
             example = new FlyweightExample();
             example = new CompositeExample();
+            example = new BridgeExample();
 
             // Behaviour
-            example = new VisitorExample();
+           // example = new VisitorExample();
 
             example.Run();
 
