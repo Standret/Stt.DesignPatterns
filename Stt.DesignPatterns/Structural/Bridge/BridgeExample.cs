@@ -10,8 +10,8 @@ namespace Stt.DesignPatterns.Structural.Bridge
 
         protected override void RunAction()
         {
-            var simple = new WordInteractor(new WordService());
-            var mock = new WordInteractor(new WordMockService());
+            IWordInteractor simple = new WordInteractor(new WordService());
+            IWordInteractor mock = new WordInteractor(new WordMockService());
 
             simple.GetWord();
             mock.GetWord();
